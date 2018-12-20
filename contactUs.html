@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/bulma.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/main.css">
+  <!-- <meta http-equiv="refresh" content="3"> -->
+</head>
+<body>
+  <div id="perspective" >
+    <div id="container" class="p-container">
+      <div class="header">
+        <div class="content" style="background:linear-gradient(-45deg, #fdff00, rgba(253, 65, 65, 0.8), #fdb840, #A8FF00 )">
+          <div class="container" style="padding:50px;">
+            <div class="subtitle is-2 has-text-centered has-text-light" style="padding-bottom:10px;font-family:Ailerons">
+              Events Head
+            </div>
+            <br>
+            <div class="columns is-centered">
+              <div class="column">
+                <figure class="image is-2by3">
+                  <img src="http://delhitechnicalcampus.ac.in/wp-content/uploads/2018/05/Mr-Ankit-Sahay.jpg" width=600 height=300 alt="">
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image is-2by3">
+                  <img src="img/team/NP1.jpg" width=600 height=300 alt="">
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image is-2by3">
+                  <img src="img/team/NP1.jpg" width=600 height=300 alt="">
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image is-2by3">
+                  <img src="img/team/NP1.jpg" width=600 height=300 alt="">
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image is-2by3">
+                  <img src="img/team/NP1.jpg" width=600 height=300 alt="">
+                </figure>
+              </div>
+
+            </div>
+            <br><br>
+            <div class="subtitle is-2 has-text-centered has-text-light" style="padding-bottom:10px;font-family:Ailerons">
+              Sponsorship and Marketing Head
+             </div>
+            <div class="columns">
+              <div class="column">
+                <div class="profile">
+                  <div class="profile__card">
+                    <a href="" class="profile__image"><img src="img/team/avinash.jpg" width=600 height=300 alt=""></a>
+                    <div class="profile__detail">
+                      <h2 class="profile__title"><a href="#">Avinash Kumar</a></h2>
+                      <small class="profile__category"><a href="#">7065456618</a></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="profile">
+                  <div class="profile__card">
+                    <a href="" class="profile__image"><img src="img/team/avinash.jpg" width=600 height=300 alt=""></a>
+                    <div class="profile__detail">
+                      <h2 class="profile__title"><a href="#">Avinash Kumar</a></h2>
+                      <small class="profile__category"><a href="#">7065456618</a></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="profile">
+                  <div class="profile__card">
+                    <a href="" class="profile__image"><img src="img/team/avinash.jpg" width=600 height=300 alt=""></a>
+                    <div class="profile__detail">
+                      <h2 class="profile__title"><a href="#">Avinash Kumar</a></h2>
+                      <small class="profile__category"><a href="#">I.T Department</a></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- header -->
+    </div><!-- /container -->
+    <nav id="outer-nav" class="outer-nav">
+      <a href="index.html" class="icon-home">Home</a>
+      <a href="events.html" class="icon-news">Events</a>
+      <!-- <a href="workshop.html" class="icon-lock">Workshop</a> -->
+      <a href="gallery.html" class="icon-image">Gallery</a>
+      <a href="team.html" class="icon-lock">Team</a>
+      <a href="schedule.html" class="icon-lock">Schedule</a>
+      <a href="contactUs.html" class="icon-mail">Contact Us</a>
+      <!-- <a href="hospitality.html" class="icon-mail">Hospitality</a> -->
+    </nav>
+  </div>
+  <button type="button" id="menu-toggle" class="button is-warning is-large" name="button">&#9776;</button>
+  <script src="js/TweenLite.min.js"></script>
+  <script src="js/EasePack.min.js"></script>
+  <script src="js/demo-1.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="js/jquery.hover3d.js" ></script>
+  <script src="js/JavaScript_Main.js" ></script>
+
+  <script type="text/javascript">
+  $(".scrolldown").click(function() {
+    $('html,body').animate({
+      scrollTop: $(".about").offset().top},
+      'slow');
+    });
+
+    $("#menu-toggle").click(function() {
+      $('#perspective').addClass("perspective");
+      $('.p-container').addClass("moveleft");
+      $('#menu-toggle').addClass("hidden");
+      $('#outer-nav').addClass("animate");
+    });
+
+    $("#container").click(function() {
+      $('#container').removeClass("moveleft");
+      $('#menu-toggle').removeClass("hidden");
+      $('#outer-nav').removeClass("animate");
+      setTimeout(function() {
+        $('#perspective').delay("slow").removeClass("perspective");
+      }, 400);
+
+    });
+    </script>
+  </body>
+  </html>

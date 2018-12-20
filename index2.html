@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="css/master2.css">
+      <script src="js/JavaScript_Main.js" ></script>
+        <link rel="stylesheet" href="css/bulma.css">
+    <title></title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="logo">
+        <h1 class="has-text-centered has-text-white" style="font-family:'samarkan';font-size:70px;margin:5px;">techcurio</h1>
+
+      </div>
+      <div id="buildingImg"><img src="img/building3.png" height="100%"> </div>
+    </div>
+</body>
+  <script type="text/javascript">
+    $(window).scroll(function(){
+      var scrollval = $(this).scrollTop();
+      $("#logo").css("transform",'translate(0px,-'+scrollval/2+'%)');
+
+    });
+  </script>
+</html>
