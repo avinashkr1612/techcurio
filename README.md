@@ -1,2 +1,2 @@
 # techcurio
-A civil engineering techfest website (Delhi Technical Campus)
+###A civil engineering techfest website (Delhi Technical Campus)
